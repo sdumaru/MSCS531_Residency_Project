@@ -31,7 +31,6 @@ system.mem_ranges = [AddrRange("8192MB")]
 
 # CPU configuration (using ArmTimingSimpleCPU for ARM) and Memory bus
 system.cpu = ArmTimingSimpleCPU()
-system.cpu.power_gate = True
 system.membus = SystemXBar()
 
 # Create cache and connect it to the System CPU
